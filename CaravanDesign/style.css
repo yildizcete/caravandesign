@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* normal hafif hoş biraz kalın yazı tipi*/
+
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Lato&display=swap');
+/* herr von muellerhoff- italik yazı tipi */
+
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Lato&family=Poppins:wght@100;500&display=swap');
+/* poppins- normal yazı için. tüm etiketlere*/
+
+
+/* KULLANDIĞIM SİTELER
+https://scrollrevealjs.org 
+https://www.npmjs.com 
+https://unsplash.com 
+https://fontawesome.com
+*/
+
+
+/*HEADER KISMI BAŞLANGIÇ*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    /* BURADA TÜM ETİKETLER İÇİN İSTEMEDİĞİM ÖZELLİKLERİ KALDIRDIM*/
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+    /* BURADA LİNKTE İSTEMEDİĞİM ÖZELLİKLERİ KALDIRDIM*/
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    /* BURADA LİSTE ETİKETİNDE İSTEMEDİĞİM ÖZELLİKLERİ KALDIRDIM*/
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    /* BURADA PARAGRAF ETİKETLERİNDE İSTEMEDİĞİM ÖZELLİKLERİ KALDIRDIM*/
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    background-image: url(caravan.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; /* tüm ekranı kaplaması için*/
+    /*BURADA ARKAPLANA RESİM EKLEDİM*/
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin-right: -100px;
+    /* CARAVAN DESIGN YAZISIYLA MENÜ KISMINI AYIRDIM*/
+}
+
+.header-logo{
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid black;
+    border-radius: 35px;
+    padding-bottom: 5px;
+    margin-left: -150px;
+    /* CARAVAN DESIGN YAZISINI BU KISIMDA DÜZENLEDİM. ALTTAKİ GÜLÜCÜĞÜ OLUŞTURDUM*/
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%); /* x koorinatına göre ortaladı*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* ORTADAKİ YAZIYI DÜZENLEDİM*/
+}
+
+.first-letter{
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+
+
+.btn-caravan{
+    display: block;
+    background-color: burlywood;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+    /*GET STARTED BUTONUNU DÜZENLEDİM*/
+}
+
+.btn-caravan::after{
+    content: 'BUY';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #5b2a02; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    /* BUY YAZISINI EKLEDİM*/
+}
+
+
+.btn-caravan:hover::after{
+    top: 0;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin-left: 27px;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+h1{
+    font-size: 8.5rem;
+    font-weight: 20px;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: 'Herr Von Muellerhoff' ,cursive;
+    color: #5b2a02;
+    /* WELCOME YAZISINI DÜZENLEDİM*/
+}
+
+h3{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/*HEADER KISMI BİTİŞ*/
+
+
+/*ABOUT KISMI BAŞLANGIÇ*/
+
+.about{
+    margin-bottom: 150px;
+}
+
+.about-title{
+    margin: 60px 0;
+}
+
+.about-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-title h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-image{
+    width: 40%;
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text{
+    width: 40%;
+}
+
+
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 60px;
+    color: #745b37;
+    font-family: "Herr Von Muellerhoff", cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+}
+
+#asteriks{
+    color: #745b37;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-text p{
+    font-size: 15px;
+    text-align: center;
+    color: #2c2727;
+
+}
+
+.buyut{
+    letter-spacing: 2px;
+    font-size: 30px;
+
+}
+
+/*ABOUT KISMI BİTİŞ*/
+
+
+
+
+/*PORTFOLYO KISMI BAŞLANGIÇ*/
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item{
+    width: 25%;
+    height: 253px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #5b2a02; 
+    position: absolute;
+    top: 100;
+    left: 0;
+    opacity: 0.3;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.portfolio-item:hover .overlay{
+    top: 0;
+}
+
+.portfolio-item:hover img{
+    transform: scale(1.1);
+}
+
+/*PORTFOLIO KISMI BİTİŞ*/
+
+
+/* CONTACT BAŞLANGIÇ*/
+
+.contact{
+    padding: 10px 0;
+
+}
+
+.contact h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+contact h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.contact-item i{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #5b2a02;
+}
+
+.contact-item p{
+    font-size: 17px;
+    line-height: 33px;
+}
+
+/* CONTACT BİTİŞ*/
+
+
+/* FOOTER BAŞLANGIÇ*/
+
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+} 
+
+footer h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: lightcoral;
+}
+
+.footer-copyright{
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 17px;
+    margin-bottom: 25px;
+
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.footer-social i{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 40px;
+   
+}
+
+.footer-social:first-child{
+    margin-left: 55px;
+}
+
+
+#menu-icon{
+    font-size: 25px;
+    display: none;
+    margin-left: 20px;
+}
+
+/* FOOTER BİTİŞ*/
+
+
+
+
+/*HEADER*/
+
+@media only screen and (max-width:800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #2b1402da;
+        width: 100%;
+        overflow: hidden;
+        transition: maxheight .5sn;
+        
+    }
+
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .header-menu ul li a{
+        color: #fff;
+    }
+
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+
+/* ABOUT*/
+
+@media only screen and (max-width:990px){
+    .about-image{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+}
+
+
+
+/*PORTFOLIO*/
+
+@media only screen and (max-width:990px){
+    .portfolio .portfolio-item{
+        flex-basis: 50%;
+    }
+}
+
+
+@media only screen and (max-width:580px){
+    .portfolio .portfolio-item{
+        flex-basis: 100%;
+    }
+}
+
+
+
+/*CONTACT*/
+
+@media only screen and (max-width:800px){
+    .contact-content{
+        flex-direction: column;
+    }
+    
+    .contact-item{
+        margin-top: 30px;
+    }
+
+    .contact-item p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
